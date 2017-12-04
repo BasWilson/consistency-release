@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8" />
+    <title>Consistency</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+    <link href="style/constants.css" rel="stylesheet" type="text/css"/>
+    <link href="style/login.css" rel="stylesheet" type="text/css"/>
+    <link href="style/titlebar.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <div id="title-bar">
+
+         <div id="title">Consistency</div>
+
+         <div id="title-bar-btns">
+
+              <button id="min-btn">-</button>
+
+              <button id="max-btn">+</button>
+
+              <button id="close-btn">x</button>
+
+         </div>
+
+    </div>
+    <div class="page">
+      <div class="padding">
+        <div class="background-image"></div>
+        <header>
+          <div class="left">
+            <h1>Consistency</h1>
+          </div>
+        </header>
+        <main>
+          <div class="task-creator">
+            <div class="new-task">
+              <div id="GoogleLogin"class="google-button">
+                Sign in with
+                <div class="google-image"></div>
+              </div>
+              <div class="informative">Consistency - The revolutionary to-do list app 🔥</div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="interaction/titlebar.js"></script>
+    <script src="interaction/cookie.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
+    <script src="interaction/jquery-3.2.1.min.js" onload="window.$ = window.jQuery = module.exports;"></script>
+    <script src="interaction/main.js"></script>
+    <script src="interaction/fb.js"></script>
+  </body>
+</html>

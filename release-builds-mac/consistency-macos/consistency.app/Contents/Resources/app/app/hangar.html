@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8" />
+    <title>Consistency</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+    <link href="style/constants.css" rel="stylesheet" type="text/css"/>
+    <link href="style/titlebar.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <div id="title-bar">
+
+         <div id="title">Consistency</div>
+
+         <div id="title-bar-btns">
+
+              <button id="min-btn">-</button>
+
+              <button id="max-btn">+</button>
+
+              <button id="close-btn">x</button>
+
+         </div>
+
+    </div>
+    <div class="page">
+      <div class="padding">
+        <div class="background-image"></div>
+        <header>
+          <div class="left">
+            <h1>Welcome, <span id="username"></span></h1>
+            <h3 id="date"></h3>
+          </div>
+          <div class="right">
+            <p id="logout" class="action">Log out</p>
+            <div id="profile-picture"></div>
+          </div>
+        </header>
+        <main class="reset">
+          <div class="task-creator">
+            <div class="new-task">
+              <textarea id="taskField" class="enter-task enter" required placeholder="Create a new task..."></textarea>
+              <div class="add-label">Press "Enter" to create this task</div>
+              <p class="informative"></p>
+            </div>
+            <div class="tasks">
+              <!-- Add task holders here -->
+            </div>
+            <div class="doneTasks">
+              <!-- Add task holders here -->
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="interaction/titlebar.js"></script>
+    <script src="interaction/cookie.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
+    <script src="interaction/jquery-3.2.1.min.js" onload="window.$ = window.jQuery = module.exports;"></script>
+    <script src="interaction/main.js"></script>
+    <script src="interaction/fb.js"></script>
+  </body>
+</html>
